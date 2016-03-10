@@ -1,0 +1,44 @@
+!!!5
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    %meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    %title Resend Faxes
+
+    %link(rel="stylesheet" href="concise.min.css")
+    %script(src="jquery-2.2.1.min.js")
+    %script(src="application.js")
+
+  %body
+    %div(container)
+      %h3 Resend Faxes
+
+      %form(id="resendFaxes")
+        %p
+          %label(for="fax_ids")
+            Fax IDs
+            %small (one per line)
+          %textarea(name="fax_ids" id="fax_ids" rows="10")
+
+        %p
+          %label(for="api_key") API Key
+          %input(type="text" name="api_key" id="api_key")
+
+        %p
+          %label(for="api_secret") API Secret
+          %input(type="password" name="api_secret" id="api_secret")
+
+        %input(type="submit" value="Resend Faxes")
+
+      %hr
+
+      %h3 Results
+      %table(id="resendResults")
+        %thead
+          %tr
+            %th Success
+            %th Message
+            %th Fax ID
+        %tbody
