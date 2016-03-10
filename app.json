@@ -1,0 +1,12 @@
+{
+  "name": "Resend Phaxio Faxes",
+  "description": "A little tool to help you bulk resend faxes",
+  "keywords": [
+    "phaxio",
+    "fax"
+  ],
+  "website": "https://www.phaxio.com/",
+  "repository": "https://github.com/phaxio/resend_faxes",
+  "logo": "https://www.phaxio.com/images/redlogo.png",
+  "image": "heroku/ruby",
+}
